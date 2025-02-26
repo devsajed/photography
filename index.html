@@ -10,81 +10,212 @@
     content="Welcome to our photography website. Explore stunning photos and learn more about our services.">
   <meta name="keywords" content="photography, photos, gallery, services">
   <meta name="author" content="sabina">
-
+  <!-- Favicon -->
+  <link rel="icon" href="" type="image/png">
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <!-- Custom Css Link  -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- responsive css Link -->
+   <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
-  <!-- Header Section Start Here  -->
-  <div class="header-area ">
+  <!-- Header area  -->
+
+  <div class="header-area">
+    <!-- header-top  -->
     <div class="header-top">
       <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <div class="header-top-contact">
-              <ul class="d-flex">
-                <li><a href="tel:+1234567890">+123 456 7890</a></li>
-                <li><a href="mailto:info@gmail.com">info@gmail.com </a>
+        <div class="row align-items-center">
+          <div class="col-6 col-md-6 col-sm-12">
+            <div class="header-info ">
+              <a href="tel:+1234567890"><i class="fa fa-phone"></i> +123 456 7890</a>
+              <a href="mailto:info@gmail.com"><i class="fa fa-envelope"></i> info@gmail.com</a>
             </div>
           </div>
-          <div class="col-6  ">
-            <div class="header-top-social d-flex justify-content-end">
-              <ul class="d-flex">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
+          <div class="col-6 col-md-6 col-sm-12">
+            <div class="header-social text-right">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
- <!-- main header  -->
+    <!-- /header-top  -->
+
+    <!-- header-bottom  -->
     <header class="headers">
       <div class="container">
-        <div class="row">
-          <div class="col-3">
-            <div class="header-logo">
-              <a href="index.html">
-                <img src="assets/img/logo.png" alt="logo">
+        <div class="row align-items-center">
+          <div class="col-md-3 col-sm-12 col-3">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/img/Logo.png" alt="Logo">
               </a>
             </div>
           </div>
-          <div class="col-9">
-            <div class="header-menu">
+          <div class="col-9 col-md-12 col-sm-12">
+            <nav class="navbar">
               <ul class="d-flex justify-content-end">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">contact</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
     </header>
+    <!-- /header-bottom  -->
   </div>
-  <!-- Header Section End Here  -->
+  <!-- /Header area  -->
 
-  <!-- Hero Section Start Here  -->
-
-  <div class="hero-area  position-absolute top-0 cover-100 bg-opacity d-flex justify-content-center align-items-center " style="background-image: url('assets/img/unsplash_0ipRHUkZeG8.jpg');">
+  <!-- Hero area  -->
+  <section class="hero-area cover bg-opacity justify-content-center align-items-center d-flex"
+    style="background-image: url(assets/img/hero-bg.jpg);">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="hero-area-content text-center pt-80">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="hero-text text-center pt-large">
             <h1>Some Moments Express Soulful Emotions</h1>
-            <p>Telling stories through images that are both beautiful and meaningful and convey a message that can be seen.</p>
-            <a href="gallery.html" class="btn">View Gallery</a>
+            <p>Telling stories through images that are both beautiful and meaningful and convey a message that can be
+              seen.</p>
+            <a href="#" class="bg-btn">Get connect</a>
+            <a href="#" class="btn">view Gallery</a>
           </div>
         </div>
       </div>
     </div>
+  </section>
+  <!-- /Hero area  -->
+
+  <!-- Philosophy Area  -->
+  <section class="philosophy-area pt-large pb-large">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6 col-md-12 col-sm-12">
+          <div class="philosophy-img">
+            <img src="assets/img/about.png" alt="Philosophy">
+          </div>
+        </div>
+        <div class="col-6 col-md-12 col-sm-12">
+          <div class="philosophy-text">
+            <span>WHAT DRIVES ME</span>
+            <h2>My Philosophy</h2>
+            <p>My photography is a reflection, which comes to life in action and reaction. You will see in my work: both
+              creative and
+              documentary photography. My focus is always on the story. I am a storyteller. I am a photographer.</p>
+            <p>To me, photography is about making sense of the world. Photography is about finding appreciation in the
+              small things in
+              life. Photography is about walking slower, looking at things, and finding beauty in the ordinary and
+              mundane.
+              Photography is a meditation on life and death.</p>
+            <p>Photography is about walking slower, looking at things, and finding beauty in the ordinary and mundane.
+              Photography is a
+              meditation on life and death.</p>
+            <a href="#" class="bg-btn mt-medium">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Philosophy Area  -->
+
+  <!-- About area  -->
+  <section class="about-area pt-large pb-large">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="about-text">
+            <span>INTRODUCTION</span>
+            <h2>About Me</h2>
+            <p>I am a professional photographer. I particularly specialise in contemporary landscape and portrait
+              photography. They are
+              important because we can document something and have it forever. Photography lets us see something.</p>
+            <ul class="row counters ">
+              <li class="col-sm-12">
+                <span>1000+</span>
+                <p>Happy Clients</p>
+              </li>
+              <li class="col-sm-12">
+                <span>500+</span>
+                <p>Projects Completed</p>
+              </li>
+              <li class="col-sm-12">
+                <span>300+</span>
+                <p>Photoshoots</p>
+              </li>
+            </ul>
+            <a href="#" class="bg-btn mt-medium">learn more</a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="about-img">
+            <img src="assets/img/abouts.png" alt="About">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /About area  -->
+
+  <!-- Services Area  -->
+  <section class="services-area pt-large pb-large">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="section-title text-center">
+            <span>WHAT I DO</span>
+            <h2>My Services</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-large">
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="services-box text-center">
+            <div class="services-icon">
+              <i class="fa fa-camera"></i>
+            </div>
+            <h3>Photography</h3>
+            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever.
+              It remembers
+              little things, long after you have forgotten everything.</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="services-box text-center">
+            <div class="services-icon">
+              <i class="fa fa-video"></i>
+            </div>
+            <h3>Videography</h3>
+            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever.
+              It remembers
+              little things, long after you have forgotten everything.</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="services-box text-center">
+            <div class="services-icon">
+              <i class="fa fa-image"></i>
+            </div>
+            <h3>Editing</h3>
+            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever.
+              It remembers
+              little things, long after you have forgotten everything.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Services Area  -->
 
 </body>
 
