@@ -36,10 +36,11 @@ img {
 
 /* Color Variables */
 :root {
-  --dark-gray: #333;
+  --dark-gray: #1f1d1c;
   --white-color: #fff;
   --smoky-black: #160c00;
   --dark-orange: #ab5d00;
+  --gray:#ddd;
   --dark-opacity: rgba(39, 26, 11, 0.5);
   --primary-spacing: 10px;
   --secondary-spacing: 30px;
@@ -274,9 +275,9 @@ img {
   line-height: 32px;
   font-weight: 400;
   font-style: italic;
-  color: #ab5d00;
+  color: var(--dark-orange);
 }
-.section-title h2 {
+.section-title h4 {
   font-size: 56px;
   line-height: 65px;
   font-weight: 400;
@@ -285,10 +286,10 @@ img {
   position: relative;
   margin-bottom: 20px;
 }
-.section-title h2:after {
+.section-title h4:after {
   content: "";
   position: absolute;
-  background: #ab5d00;
+  background: var(--dark-orange);
   width: 41px;
   height: 4px;
   bottom: -10px;
@@ -300,7 +301,7 @@ img {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #1f1d1c; 
+  background-color: var(--dark-gray); 
 }
 /* Preloader */
 #preloader {
@@ -310,14 +311,14 @@ img {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: #fff;
+  background-color: var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .loader {
-  border: 16px solid #f3f3f3;
+  border: 16px solid var(--white-color);
   border-radius: 50%;
   border-top: 16px solid #3498db;
   width: 20px;
@@ -366,7 +367,7 @@ img {
 }
 
 .header-top {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--gray);
   padding: 10px 0;
 }
 .header-info a,
@@ -397,7 +398,7 @@ img {
   display: inline-block;
   font-size: 17px;
   text-transform: capitalize;
-  color: #fff;
+  color: var(--white-color);
   font-family: cormor;
   opacity: .6;
 }
@@ -448,7 +449,7 @@ img {
 /* philosophy area  */
 .philosophy-area {
   padding: 100px 0;
-  background: #1f1d1c;
+  background: var(--dark-gray);
 }
 
 
@@ -462,7 +463,7 @@ img {
 .about-text span,
 .philosophy-text span {
   font-size: 17px;
-  color: #ab5d00;
+  color: var(--dark-orange);
   font-style: italic;
   line-height: 32px;
 }
@@ -512,7 +513,7 @@ img {
   opacity: 0.5;
   transition: .3s;
 }
-.services-box h3 {
+.services-box h4 {
   font-size: 41px;
   line-height: 51px;
   font-weight: 500;
@@ -531,5 +532,224 @@ img {
   opacity: 1;
 }
 .services-box:hover .services-icon {
+  opacity: 1;
+}
+
+/* Projects  */
+.projects-area {
+	padding: 100px 0;
+}
+
+
+.project-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+/* Background Overlay */
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark Overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect on Card */
+.project-card:hover::before {
+  opacity: 1;
+}
+
+/* Button Overlay */
+.overlay {
+  position: absolute;
+  bottom: -100%; /* Start completely hidden */
+  opacity: 0;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.overlay a {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--dark-gray);
+  padding: 6px 10px;
+  background: var(--dark-orange);
+  border-radius: 6px;
+  text-decoration: none;
+  transition:  0.3s ease-in-out;
+}
+.overlay a:hover{
+  color: var(--white-color);
+}
+.overlay p {
+	font-size: 23px;
+	line-height: 36px;
+	font-family: comrant;
+	font-weight: 400;
+}
+/* Hover Effect */
+.project-card:hover .overlay {
+  bottom: 105px; /* Adjusted to be visible */
+  opacity: 1;
+}
+/* contact  */
+/* Contact Area */
+.contact-area {
+  padding: 100px 0;
+  background: var(--dark-gray);
+  color: var(--white-color);
+}
+
+.contact-info h4 {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 500;
+  font-family: comorant;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+  color: var(--dark-orange);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  background: #2b2927;
+  color: var(--white-color);
+}
+
+.contact-form .form-control::placeholder {
+  color: var(--gray);
+}
+
+.contact-form .bg-btn {
+  display: inline-block;
+  font-size: 17px;
+  color: var(--white-color);
+  padding: 10px 20px;
+  border: 2px solid var(--dark-orange);
+  background: var(--dark-orange);
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition:  0.3s ease-in-out;
+}
+
+.contact-form .bg-btn:hover {
+  background: transparent;
+  color: var(--dark-orange);
+}
+
+/* footer  */
+.footer-area{
+  padding: 80px 0;
+  background: var(--smoky-black);
+  color: var(--white-color);
+}
+
+
+.footer-about img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-about p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.footer-about a {
+  display: block;
+  font-size: 16px;
+  color: var(--white-color);
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.footer-about a i {
+  margin-right: 10px;
+}
+
+.footer-links h4,
+.footer-services h4,
+.footer-social h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.footer-links ul,
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-services ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-services ul li a {
+  font-size: 16px;
+  color: var(--white-color);
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer-links ul li a:hover,
+.footer-services ul li a:hover {
+  opacity: 1;
+}
+
+.footer-social .social-links a {
+  display: inline-block;
+  font-size: 20px;
+  color: var(--white-color);
+  margin-right: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer-social .social-links a:hover {
   opacity: 1;
 }
