@@ -11,21 +11,21 @@
   <meta name="keywords" content="photography, photos, gallery, services">
   <meta name="author" content="sabina">
   <!-- Favicon -->
-  <link rel="icon" href="" type="image/png">
-  
+  <link rel="icon" href="assets/img/camera.png" type="image/png">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <!-- Custom Css Link  -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- responsive css Link -->
-   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
 <body>
   <!-- Header area  -->
 
-  <div class="header-area">
+  <div class="header-area" id="header">
     <!-- header-top  -->
     <div class="header-top">
       <div class="container">
@@ -53,23 +53,27 @@
     <header class="headers">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-3 col-sm-12 col-3">
+          <div class="col-md-6 col-sm-6 col-3">
             <div class="logo">
               <a href="#">
                 <img src="assets/img/Logo.png" alt="Logo">
               </a>
             </div>
           </div>
-          <div class="col-9 col-md-12 col-sm-12">
+          <div class="col-9 col-md-6 col-sm-6">
             <nav class="navbar">
-              <ul class="d-flex justify-content-end">
-                <li class="active"><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">contact</a></li>
+              <ul class="menu d-flex justify-content-end">
+                <li class="active"><a href="#header">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#service">services</a></li>
+                <li><a href="#project">projects</a></li>
+                <li><a href="#contact">contact</a></li>
               </ul>
             </nav>
+            <div class="toggle-btn">
+              <i class="fa-solid fa-bars open-btn" ></i>
+              <i class="fa-solid fa-times close-btn"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +88,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-          <div class="hero-text text-center pt-large">
+          <div class="hero-text text-center  ">
             <h1>Some Moments Express Soulful Emotions</h1>
             <p>Telling stories through images that are both beautiful and meaningful and convey a message that can be
               seen.</p>
@@ -130,7 +134,7 @@
   <!-- /Philosophy Area  -->
 
   <!-- About area  -->
-  <section class="about-area pt-large pb-large">
+  <section class="about-area pt-large pb-large" id="about">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-6 col-lg-6 col-md-12 col-sm-12">
@@ -168,7 +172,7 @@
   <!-- /About area  -->
 
   <!-- Services Area  -->
-  <section class="services-area pt-large pb-large">
+  <section class="services-area pt-large pb-large" id="service">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12 col-md-12 col-sm-12">
@@ -185,7 +189,8 @@
               <i class="fa fa-camera"></i>
             </div>
             <h3>Photography</h3>
-            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever.
+            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured
+              forever.
               It remembers
               little things, long after you have forgotten everything.</p>
           </div>
@@ -196,7 +201,8 @@
               <i class="fa fa-video"></i>
             </div>
             <h3>Videography</h3>
-            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever.
+            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured
+              forever.
               It remembers
               little things, long after you have forgotten everything.</p>
           </div>
@@ -207,7 +213,8 @@
               <i class="fa fa-image"></i>
             </div>
             <h3>Editing</h3>
-            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever.
+            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured
+              forever.
               It remembers
               little things, long after you have forgotten everything.</p>
           </div>
@@ -217,6 +224,9 @@
   </section>
   <!-- /Services Area  -->
 
+
+  <!-- Main js  -->
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>

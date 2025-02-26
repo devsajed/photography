@@ -113,6 +113,8 @@ img {
   .col-md-12 {
     width: 100%;
   }
+  
+
 }
 @media (max-width: 576px) {
   .col-sm-12 {
@@ -293,6 +295,22 @@ img {
   left: 47%;
   transform: translate(50%,-50%);
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1f1d1c; 
+}
+
+/* Toggle btn  */
+.toggle-btn{
+  display: none;
+}
+.close-btn {
+  display: none;
+}
+
 /*  Header Area */
 .header-area {
   position: absolute;
@@ -340,6 +358,7 @@ img {
 /* Hero area  */
 .hero-text {
 	width: 800px;
+  padding-top: 100px;
 }
 .hero-text h1 {
   font-size: 80px;
