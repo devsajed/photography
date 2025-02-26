@@ -678,7 +678,7 @@ img {
 
 /* footer  */
 .footer-area{
-  padding: 80px 0;
+  padding: 80px 20px 0;
   background: var(--smoky-black);
   color: var(--white-color);
 }
@@ -752,4 +752,27 @@ img {
 
 .footer-social .social-links a:hover {
   opacity: 1;
+}
+
+.footer-bottom {
+  padding: 20px  0;
+  /* background: var(--dark-gray); */
+  color: var(--white-color);
+  border-top: 1px solid var(--gray);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.footer-bottom a {
+  color: var(--dark-orange);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-bottom a:hover {
+  color: var(--white-color);
 }
